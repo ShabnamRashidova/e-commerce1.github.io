@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!--owl carousel-->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!--Jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="sass/style.css">
+  <title>Razzi-Ecommerce</title>
+</head>
+
+<body>
+  <!--Topbar Start-->
+  <div class="topbar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 d-flex align-items-center">
+          <div class="text me-5">
+            <span><i class="fas fa-truck"></i></span>
+            <span>FREE SHIPPING OVER $100</span>
+          </div>
+          <label class="dropdown">
+            <div class="dd-button">
+              USD
+            </div>
+            <input type="checkbox" class="dd-input" id="test">
+            <ul class="dd-menu">
+              <li>USD</li>
+              <li>GPB</li>
+            </ul>
+          </label>
+          <label class="dropdown ">
+            <div class="dd-button">
+              English
+            </div>
+            <input type="checkbox" class="dd-input" id="test">
+            <ul class="dd-menu">
+              <li>English</li>
+              <li>Germany</li>
+              <li>France</li>
+            </ul>
+          </label>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-end">
+          <ul class="menu">
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="social-media-btn justify-self-end">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li> <a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Topbar-mobile Start-->
+  <div class="topbar-mobile">
+    <div class="container">
+      <div class="row text-center justify-content-center">
+        <div class="col-md-8">
+          <label class="dropdown">
+            <div class="dd-button">
+              USD
+            </div>
+            <input type="checkbox" class="dd-input" id="test">
+            <ul class="dd-menu">
+              <li>USD</li>
+              <li>GPB</li>
+            </ul>
+          </label>
+          <label class="dropdown ">
+            <div class="dd-button">
+              English
+            </div>
+            <input type="checkbox" class="dd-input" id="test">
+            <ul class="dd-menu">
+              <li>English</li>
+              <li>Germany</li>
+              <li>France</li>
+            </ul>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Topbar-mobile End-->
+  <!--Topbar End-->
+  <!--Header Start-->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center content">
+        <div class="logo"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="84.032" height="23.52"
+              viewBox="0 0 84.032 23.52">
+              <path
+                d="M2.336-21.344V0H7.264V-8.416L13.024,0H19.04L12.48-8.736a6.716,6.716,0,0,0,2.976-1.632A5.839,5.839,0,0,0,17.12-14.72a6.435,6.435,0,0,0-1.856-4.768,7.635,7.635,0,0,0-5.44-1.856ZM7.264-17.5H8.416a4.815,4.815,0,0,1,2.72.672,2.59,2.59,0,0,1,.992,2.176,2.873,2.873,0,0,1-.8,2.08,4.053,4.053,0,0,1-2.944.928H7.264ZM31.84-12.672a5.354,5.354,0,0,0-4.48-2.08A6.881,6.881,0,0,0,22.4-12.8a8.127,8.127,0,0,0-2.208,5.76A7.552,7.552,0,0,0,22.272-1.7,6.764,6.764,0,0,0,27.616.48,4.756,4.756,0,0,0,31.84-1.728V0h4.608V-14.272H31.84Zm-3.328,1.888a3.856,3.856,0,0,1,2.56.992,3.619,3.619,0,0,1,1.056,2.624,3.625,3.625,0,0,1-1.12,2.688,3.413,3.413,0,0,1-2.4.992,3.785,3.785,0,0,1-2.72-1.12,3.681,3.681,0,0,1-.96-2.56A3.566,3.566,0,0,1,25.984-9.76,3.633,3.633,0,0,1,28.512-10.784Zm25.312-3.488H39.744v3.84h6.3L38.624,0h14.56V-3.84H46.432Zm15.968,0H55.712v3.84h6.3L54.592,0h14.56V-3.84H62.4Zm2.5,0V0H76.9V-14.272Zm-.384-6.08a2.663,2.663,0,0,0,2.688,2.688,2.663,2.663,0,0,0,2.688-2.688,2.663,2.663,0,0,0-2.688-2.688A2.663,2.663,0,0,0,71.9-20.352ZM80.544-2.9A2.88,2.88,0,0,0,83.456.01,2.88,2.88,0,0,0,86.368-2.9a2.88,2.88,0,0,0-2.912-2.91A2.88,2.88,0,0,0,80.544-2.9Z"
+                transform="translate(-2.336 23.04)"></path>
+            </svg></a></div>
+        <nav class="nav">
+          <ul class="nav-list m-0 p-0">
+            <li class="nav-item"><a href="#" class="nav-link">home</a></li>
+            <li class="nav-item"> <a href="#" class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">pages</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">blog</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">features</a></li>
+          </ul>
+        </nav>
+        <div class="social-icon d-flex">
+          <div class="header-search"><a href="#" class="search-icon"> <span class="search-svg"> <span
+                  class="search-svg"><svg aria-hidden="true" role="img" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg></span></span> </a> </div>
+          <div class="header-account">
+            <a href="#" class="account-icon"> <span class="account-svg"><svg aria-hidden="true" role="img"
+                  focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg></span></a>
+          </div>
+          <div class="header-wishlist">
+            <a href="#" class="wishlist-icon"> <span class="wishlist-svg"><svg aria-hidden="true" role="img"
+                  focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                  </path>
+                </svg></span></a>
+          </div>
+          <div class="header-cart">
+            <a href="#" class="cart-icon">
+              <span class="cart-svg"><svg aria-hidden="true" role="img" focusable="false" width="24" height="24"
+                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M21.9353 20.0337L20.7493 8.51772C20.7003 8.0402 20.2981 7.67725 19.8181 7.67725H4.21338C3.73464 7.67725 3.33264 8.03898 3.28239 8.51523L2.06458 20.0368C1.96408 21.0424 2.29928 22.0529 2.98399 22.8097C3.66874 23.566 4.63999 24.0001 5.64897 24.0001H18.3827C19.387 24.0001 20.3492 23.5747 21.0214 22.8322C21.7031 22.081 22.0361 21.0623 21.9353 20.0337ZM19.6348 21.5748C19.3115 21.9312 18.8668 22.1275 18.3827 22.1275H5.6493C5.16836 22.1275 4.70303 21.9181 4.37252 21.553C4.042 21.1878 3.88005 20.7031 3.92749 20.2284L5.056 9.55014H18.9732L20.0724 20.2216C20.1223 20.7281 19.9666 21.2087 19.6348 21.5748Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.1717 0C9.21181 0 6.80365 2.40811 6.80365 5.36803V8.6138H8.67622V5.36803C8.67622 3.44053 10.2442 1.87256 12.1717 1.87256C14.0992 1.87256 15.6674 3.44053 15.6674 5.36803V8.6138H17.5397V5.36803C17.5397 2.40811 15.1316 0 12.1717 0Z"
+                    fill="currentColor"></path>
+                </svg></span>
+<span class="cart-count">0</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!--Header mobile Start-->
+
+  <header class="header-mobile">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between">
+        <span class="menu-bars "><svg aria-hidden="true" role="img" focusable="false" width="24" height="18"
+            viewBox="0 0 24 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 0H0V2.10674H24V0Z"></path>
+            <path d="M24 7.88215H0V9.98889H24V7.88215Z"></path>
+            <path d="M24 15.8925H0V18H24V15.8925Z"></path>
+          </svg></span>
+        <div class="logo"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="84.032" height="23.52"
+              viewBox="0 0 84.032 23.52">
+              <path
+                d="M2.336-21.344V0H7.264V-8.416L13.024,0H19.04L12.48-8.736a6.716,6.716,0,0,0,2.976-1.632A5.839,5.839,0,0,0,17.12-14.72a6.435,6.435,0,0,0-1.856-4.768,7.635,7.635,0,0,0-5.44-1.856ZM7.264-17.5H8.416a4.815,4.815,0,0,1,2.72.672,2.59,2.59,0,0,1,.992,2.176,2.873,2.873,0,0,1-.8,2.08,4.053,4.053,0,0,1-2.944.928H7.264ZM31.84-12.672a5.354,5.354,0,0,0-4.48-2.08A6.881,6.881,0,0,0,22.4-12.8a8.127,8.127,0,0,0-2.208,5.76A7.552,7.552,0,0,0,22.272-1.7,6.764,6.764,0,0,0,27.616.48,4.756,4.756,0,0,0,31.84-1.728V0h4.608V-14.272H31.84Zm-3.328,1.888a3.856,3.856,0,0,1,2.56.992,3.619,3.619,0,0,1,1.056,2.624,3.625,3.625,0,0,1-1.12,2.688,3.413,3.413,0,0,1-2.4.992,3.785,3.785,0,0,1-2.72-1.12,3.681,3.681,0,0,1-.96-2.56A3.566,3.566,0,0,1,25.984-9.76,3.633,3.633,0,0,1,28.512-10.784Zm25.312-3.488H39.744v3.84h6.3L38.624,0h14.56V-3.84H46.432Zm15.968,0H55.712v3.84h6.3L54.592,0h14.56V-3.84H62.4Zm2.5,0V0H76.9V-14.272Zm-.384-6.08a2.663,2.663,0,0,0,2.688,2.688,2.663,2.663,0,0,0,2.688-2.688,2.663,2.663,0,0,0-2.688-2.688A2.663,2.663,0,0,0,71.9-20.352ZM80.544-2.9A2.88,2.88,0,0,0,83.456.01,2.88,2.88,0,0,0,86.368-2.9a2.88,2.88,0,0,0-2.912-2.91A2.88,2.88,0,0,0,80.544-2.9Z"
+                transform="translate(-2.336 23.04)"></path>
+            </svg></a></div>
+        <div class="nav-mobile-content">
+          <nav class="nav-mobile">
+            <div class="nav-heading d-flex justify-content-between pt-3 px-4">
+              <div class="logo"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="84.032" height="23.52"
+                    viewBox="0 0 84.032 23.52">
+                    <path
+                      d="M2.336-21.344V0H7.264V-8.416L13.024,0H19.04L12.48-8.736a6.716,6.716,0,0,0,2.976-1.632A5.839,5.839,0,0,0,17.12-14.72a6.435,6.435,0,0,0-1.856-4.768,7.635,7.635,0,0,0-5.44-1.856ZM7.264-17.5H8.416a4.815,4.815,0,0,1,2.72.672,2.59,2.59,0,0,1,.992,2.176,2.873,2.873,0,0,1-.8,2.08,4.053,4.053,0,0,1-2.944.928H7.264ZM31.84-12.672a5.354,5.354,0,0,0-4.48-2.08A6.881,6.881,0,0,0,22.4-12.8a8.127,8.127,0,0,0-2.208,5.76A7.552,7.552,0,0,0,22.272-1.7,6.764,6.764,0,0,0,27.616.48,4.756,4.756,0,0,0,31.84-1.728V0h4.608V-14.272H31.84Zm-3.328,1.888a3.856,3.856,0,0,1,2.56.992,3.619,3.619,0,0,1,1.056,2.624,3.625,3.625,0,0,1-1.12,2.688,3.413,3.413,0,0,1-2.4.992,3.785,3.785,0,0,1-2.72-1.12,3.681,3.681,0,0,1-.96-2.56A3.566,3.566,0,0,1,25.984-9.76,3.633,3.633,0,0,1,28.512-10.784Zm25.312-3.488H39.744v3.84h6.3L38.624,0h14.56V-3.84H46.432Zm15.968,0H55.712v3.84h6.3L54.592,0h14.56V-3.84H62.4Zm2.5,0V0H76.9V-14.272Zm-.384-6.08a2.663,2.663,0,0,0,2.688,2.688,2.663,2.663,0,0,0,2.688-2.688,2.663,2.663,0,0,0-2.688-2.688A2.663,2.663,0,0,0,71.9-20.352ZM80.544-2.9A2.88,2.88,0,0,0,83.456.01,2.88,2.88,0,0,0,86.368-2.9a2.88,2.88,0,0,0-2.912-2.91A2.88,2.88,0,0,0,80.544-2.9Z"
+                      transform="translate(-2.336 23.04)"></path>
+                  </svg></a></div>
+              <div class="close-icon"><i class="fas fa-times"></i></div>
+            </div>
+            <ul class="nav-list m-0 p-0">
+              <li class="nav-item"><a href="#" class="nav-link active">home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">shop</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">pages</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">blog</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">features</a></li>
+            </ul>
+            <ul class="social-media-btn">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li> <a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="social-icon d-flex">
+
+          <div class="header-wishlist">
+            <a href="#" class="wishlist-icon"> <span class="wishlist-svg"><svg aria-hidden="true" role="img"
+                  focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                  </path>
+                </svg></span></a>
+          </div>
+          <div class="header-cart">
+            <a href="#" class="cart-icon"> <span class="cart-svg"><svg aria-hidden="true" role="img" focusable="false"
+                  width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M21.9353 20.0337L20.7493 8.51772C20.7003 8.0402 20.2981 7.67725 19.8181 7.67725H4.21338C3.73464 7.67725 3.33264 8.03898 3.28239 8.51523L2.06458 20.0368C1.96408 21.0424 2.29928 22.0529 2.98399 22.8097C3.66874 23.566 4.63999 24.0001 5.64897 24.0001H18.3827C19.387 24.0001 20.3492 23.5747 21.0214 22.8322C21.7031 22.081 22.0361 21.0623 21.9353 20.0337ZM19.6348 21.5748C19.3115 21.9312 18.8668 22.1275 18.3827 22.1275H5.6493C5.16836 22.1275 4.70303 21.9181 4.37252 21.553C4.042 21.1878 3.88005 20.7031 3.92749 20.2284L5.056 9.55014H18.9732L20.0724 20.2216C20.1223 20.7281 19.9666 21.2087 19.6348 21.5748Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.1717 0C9.21181 0 6.80365 2.40811 6.80365 5.36803V8.6138H8.67622V5.36803C8.67622 3.44053 10.2442 1.87256 12.1717 1.87256C14.0992 1.87256 15.6674 3.44053 15.6674 5.36803V8.6138H17.5397V5.36803C17.5397 2.40811 15.1316 0 12.1717 0Z"
+                    fill="currentColor"></path>
+                </svg></span><span class="cart-count">0</span></a>
+                
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!--Header mobile End-->
+  <!--Header End-->
+    <!-- CART START -->
+    <div class="cart-container">
+      <div class="cart" id="cart">
+        <div class="cart-inner">
+          <div class="cart-header d-flex align-items-center justify-content-center">
+            <h4 class="cart-title">Your Cart (<span class="count">0</span>)</h4>
+            <div class="close-cart-btn"><i class="fas fa-times"></i></div>
+          </div>
+          <div class="cart-body mb-5">
+            <h4 class="d-flex align-items-center mt-5  info justify-content-center">Your cart is empty</h4>
+          </div>
+          <div class="cart-footer">
+            <div class="cart-total-container mt-5">
+              <h6>Subtotal:</h6>
+              <h6 class="cart-total"> $10.00 </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CART end -->
+  <div class="campaign-bar">
+    <div class="content">
+      <div class=" lazyloaded">
+        Get 20% sale with coupone code CGBNJKI25 </div>
+    </div>
+  </div>
+  <!--Start banner-->
+  <div id="banner" class="banner-carousel owl-carousel">
+    <div class="banner-item">
+      <div class="banner-img">
+        <a href="#"><img src="img/banner-img/home1-banner-carousels-1.jpg " alt="img1" /></a>
+      </div>
+      <div class="banner-content">
+        <h4 class="banner-title">Womens</h4>
+        <a href="#" class="link-btn">Shop now
+          <span class="arrow-svg"><svg aria-hidden="true" role="img" focusable="false"
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="0" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg></span></a>
+      </div>
+    </div>
+    <div class="banner-item">
+      <div class="banner-img">
+        <a href="#"><img src="img/banner-img/home1-banner-carousels-2.jpg" alt="img1" /></a>
+      </div>
+      <div class="banner-content">
+        <h4 class="banner-title">Mens</h4>
+        <a href="#" class="link-btn">Shop now
+          <span class="arrow-svg"><svg aria-hidden="true" role="img" focusable="false"
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="0" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg></span></a>
+      </div>
+    </div>
+    <div class="banner-item">
+      <div class="banner-img">
+        <a href="#"><img src="img/banner-img/home1-banner-carousels-3.jpg" alt="img1" /></a>
+      </div>
+      <div class="banner-content">
+        <h4 class="banner-title">Kids</h4>
+        <a href="#" class="link-btn">Shop now
+          <span class="arrow-svg"><svg aria-hidden="true" role="img" focusable="false"
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="0" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg></span></a>
+      </div>
+    </div>
+
+
+  </div>
+  <!--end banner-->
+  <!--Start new-collection-->
+  <div class="new-collection mt-50">
+    <div class="container ">
+      <div class="row align-items-center justify-content-center mb-5">
+        <div class="col-lg-7">
+          <div class="section-title">
+            <h6 class="sub-title">NEW COLLECTION</h6>
+            <h4 class="title"> Best Picks 2021</h4>
+            <p class="text"> A conscious collection made entirely from
+              food crop waste, recycled <br> cotton, other more sustainable materials.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 justify-content-center align-items-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="item item-1">
+            <div class="img-col">
+              <div class="image">
+                <img src="img/new-collection/home1-banner-grid-2.jpg" alt="new collection img">
+              </div>
+            </div>
+            <div class="text-content">
+              <h4 class="title">Bags Collection</h4>
+              <a href="" class="link">shop now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-8 col-md-6">
+          <div class="item item-2">
+            <div class="img-col">
+              <div class="image">
+                <img src="img/new-collection/home1-banner-grid-1.jpg" alt="new collection img">
+              </div>
+            </div>
+            <div class="text-content">
+              <h4 class="title">Printed Men's <br> Shirts</h4>
+              <a href="" class="link">shop now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-8 col-md-6">
+          <div class="item item-2">
+            <div class="img-col">
+              <div class="image">
+                <img src="img/new-collection/home1-banner-grid-3.jpg" alt="new collection img">
+              </div>
+            </div>
+            <div class="text-content">
+              <h4 class="title">Basic Women's <br> Dresses</h4>
+              <a href="" class="link">shop now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="item item-1">
+            <div class="img-col">
+              <div class="image">
+                <img src="img/new-collection/home1-banner-grid-6.jpg" alt="new collection img">
+              </div>
+            </div>
+            <div class="text-content">
+              <h4 class="title">Sweatshirts</h4>
+              <a href="" class="link">shop now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End new-scollection -->
+  <!--Product Start-->
+  <section class="products">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title">
+            <h4 class="title">Top Month Sellers</h4>
+          </div>
+        </div>
+      </div>
+      <div class="product-center section-center">
+        <div class="product">
+          <div class="btn-container text-center">
+            <button class="tab-btn active" data-id="women">Women</button>
+            <button class="tab-btn" data-id="men">Men</button>
+          </div>
+          <div class="product-content">
+            <!-- single item  women-products-->
+            <div class="content active women-products" id='women'>
+              <div class="row">
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <!-- <span class="badge bg-dark">sale</span> -->
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">Tunic</a></div>
+                      <h4 class="title"><a href="#"> Wide  Tunic</a></h4>
+                      <span class="price">$ 250.00</span>
+                    </div>
+
+                    <img src="img/product/w41.jpg" alt="img">
+
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">T-Shirts</a></div>
+                      <h4 class="title"><a href="#"> Crew  T-shirt</a></h4>
+                      <span class="price">$ 50.00</span>
+                    </div>
+                    <img src="img/product/w62.jpg" alt="img">
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <!-- <span class="badge bg-dark">sale</span> -->
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">Sleeve</a></div>
+                      <h4 class="title"><a href="#">Basic  Sleeve</a></h4>
+                      <span class="price">$ 170.00</span>
+                    </div>
+                    <img src="img/product/w72.jpg" alt="img">
+
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <!-- <span class="badge bg-danger">new</span> -->
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">Bag</a></div>
+                      <h4 class="title"><a href="#">Bag</a></h4>
+                      <span class="price">$ 350.00</span>
+                    </div>
+                    <img src="img/product/w131.jpg" alt="img">
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <!-- <span class="badge bg-dark">sale</span> -->
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">Dresses</a></div>
+                      <h4 class="title"><a href="#">Collared  Dress</a></h4>
+                      <span class="price">$ 320.00</span>
+                    </div>
+                    <img src="img/product/w33.jpg" alt="img">
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <!-- <span class="badge bg-dark">sale</span> -->
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">T-Shirts</a></div>
+                      <h4 class="title"><a href="#">Travel  Wallet</a></h4>
+                      <span class="price">$ 450.00</span>
+                    </div>
+                    <img src="img/product/w132 (1).jpg" alt="img">
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <!-- <span class="badge bg-danger">new</span> -->
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">Bag</a></div>
+                      <h4 class="title"><a href="#"> Cross  Bag</a></h4>
+                      <span class="price">$ 210.00</span>
+                    </div>
+                    <img src="img/product/m901.jpg" alt="img">
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">T-Shirts</a></div>
+                      <h4 class="title"><a href="#"> Travel  Wallet</a></h4>
+                      <span class="price">$ 250.00</span>
+                    </div>
+                    <img src="img/product/w12.jpg" alt="img">
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- single end -->
+            <!-- single item  men products-->
+            <div class="content men-products" id='men'>
+              <div class="row">
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <!-- <span class="badge bg-dark">sale</span> -->
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">Hat</a></div>
+                      <h4 class="title"><a href="#">Hat</a></h4>
+                      <span class="price">$ 50.00</span>
+                    </div>
+                    <img src="img/product/m72.jpg" alt="img">
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">Bag</a></div>
+                      <h4 class="title"><a href="#"> Green Bag</a></h4>
+                      <span class="price">$ 50.00</span>
+                    </div>
+                    <div class="img-content">
+                      <div class="img-content"><img src="img/product/m1001.jpg" alt="img"></div>
+                    </div>
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <!-- <span class="badge bg-dark">sale</span> -->
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">Shoe</a></div>
+                      <h4 class="title"><a href="#">Sport Shoe</a></h4>
+                      <span class="price">$ 170.00</span>
+                    </div>
+                    <img src="img/product/m62.jpg" alt="img">
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">T-shirt</a></div>
+                      <h4 class="title"><a href="#">Yellow t-shirt</a></h4>
+                      <span class="price">$ 350.00</span>
+                    </div>
+                    <img src="img/product/m31.jpg" alt="img">
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <!-- <span class="badge bg-dark">sale</span> -->
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">T-shirt</a></div>
+                      <h4 class="title"><a href="#">Blue t-shirt</a></h4>
+                      <span class="price">$ 320.00</span>
+                    </div>
+                    <img src="img/product/m21.jpg" alt="img">
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <!-- <span class="badge bg-dark">sale</span> -->
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">Jacket</a></div>
+                      <h4 class="title"><a href="#">Gray Jacket</a></h4>
+                      <span class="price">$ 350.00</span>
+                    </div>
+                    <img src="img/product/m11.jpg" alt="img">
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <!-- <span class="badge bg-danger">new</span> -->
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">Glasses</a></div>
+                      <h4 class="title"><a href="#"> Glass</a></h4>
+                      <span class="price">$ 310.00</span>
+                    </div>
+                    <img src="img/product/m81.jpg" alt="img">
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                  <div class="product-item">
+                    <div class="product-info">
+                      <div class="product-name"><a href="#">Belt</a></div>
+                      <h4 class="title"><a href="#">Brown Belt</a></h4>
+                      <span class="price">$ 60.00</span>
+                    </div>
+                    <img src="img/product/m02.jpg" alt="img">
+                    <div class="product-buttons text-center">
+                      <span class="card-btn p-btn"><i class="fas fa-lock"></i></span>
+                      <span class="view-btn p-btn"><i class="fas fa-eye"></i></span>
+                      <span class="wishlist-btn p-btn"><i class="fas fa-heart"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- single end men products-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Product End-->
+  <!--Discover start-->
+  <div id="discover">
+    <div class="discover-title">
+      Discover More
+    </div>
+    <div class="discover-carousel owl-carousel">
+      <div class="discover-item ">
+        <div class="discover-bg1">
+          <div class="text-content">
+            <h2 class="title">Get- 50% From <br>Summer Collection</h2>
+            <h4 class="discount">
+              ends on Sunday, 24 April 2020, 8:00am</h4>
+
+            <a href="#" class="link">Shop Now <i class="fas fa-arrow-right"></i></a>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="discover-item ">
+        <div class="discover-bg2">
+          <div class="text-content">
+            <h2 class="title">GET 70% From <br>Summer Collection</h2>
+            <h4 class="discount">
+              ends on Sunday, 24 April 2020, 8:00am</h4>
+            <a href="#" class="link">Shop Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--discover end-->
+  <!--testimonial start-->
+  <div id="testimonial">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title">
+            <h6 class="sub-title"> WHAT BUYERS SAY</h6>
+            <h4 class="title">Latest Buyers Reviews</h4>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-carousel owl-carousel">
+
+        <div class="testimonial-item">
+          <div class="testimonial-header">
+            <div class="header-img"><img src="img/testimonial/home1-testi-1 (1).jpg" alt="item"></div>
+            <div class="header-content">
+              <div class="test-sub-title">T-shirts</div>
+              <div class="test-title">Oversized t-shirt</div>
+              <div class="testi-rate">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-footer">
+            <div class="testi-desc">
+              God every fill great replenish darkness unto.
+              Very open. Likeness their that light. Given
+              under image to. Subdue of shall cattle day
+              fish form saw spirit and given stars, us you
+              whales may, land, saw fill unto.</div>
+            <div class="testi-meta"><span class="testi-customer">Jane Jefferson,
+
+              </span> <span class="testi-date">29 May 2019</span></div>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-header">
+            <div class="header-img"><img src="img/testimonial/blog9.jpg" alt="item"></div>
+            <div class="header-content">
+              <div class="test-sub-title">Glasses</div>
+              <div class="test-title">Glasses Fashion</div>
+              <div class="testi-rate">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-footer">
+            <div class="testi-desc">
+              God every fill great replenish darkness unto.
+              Very open. Likeness their that light. Given
+              under image to. Subdue of shall cattle day
+              fish form saw spirit and given stars, us you
+              whales may, land, saw fill unto.</div>
+            <div class="testi-meta"><span class="testi-customer">Jane Jefferson,
+
+              </span> <span class="testi-date">29 May 2019</span></div>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-header">
+            <div class="header-img"><img src="img/testimonial/home1-testi-2.jpg" alt="item"></div>
+            <div class="header-content">
+              <div class="test-sub-title">Dress</div>
+              <div class="test-title">Dress Cotton </div>
+              <div class="testi-rate">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-footer">
+            <div class="testi-desc">
+              God every fill great replenish darkness unto.
+              Very open. Likeness their that light. Given
+              under image to. Subdue of shall cattle day
+              fish form saw spirit and given stars, us you
+              whales may, land, saw fill unto.</div>
+            <div class="testi-meta"><span class="testi-customer">Jane Jefferson,
+
+              </span> <span class="testi-date">29 May 2019</span></div>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-header">
+            <div class="header-img"><img src="img/testimonial/home1-testi-3.jpg" alt="item"></div>
+            <div class="header-content">
+              <div class="test-sub-title">Shoes</div>
+              <div class="test-title">Low Top Sneakers</div>
+              <div class="testi-rate">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-footer">
+            <div class="testi-desc">
+              God every fill great replenish darkness unto.
+              Very open. Likeness their that light. Given
+              under image to. Subdue of shall cattle day
+              fish form saw spirit and given stars, us you
+              whales may, land, saw fill unto.</div>
+            <div class="testi-meta"><span class="testi-customer">Jane Jefferson,
+
+              </span> <span class="testi-date">29 May 2019</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--testimonial end-->
+  <!--Img Gallery Start-->
+  <div class="img-gallery">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h5 class="title">@Razzi</h5>
+          <div class="sec-slogan"> The best thing about a monochrome colour scheme</div>
+        </div>
+      </div>
+      <div class="images">
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="img-box">
+              <img class="img-fluid" src="img/img-gallery/i01.jpg" alt="img">
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="img-box">
+              <img class="img-fluid" src="img/img-gallery/i02.jpg" alt="img">
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="img-box">
+              <img class="img-fluid" src="img/img-gallery/i03.jpg" alt="img">
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="img-box">
+              <img class="img-fluid" src="img/img-gallery/i04.jpg" alt="img">
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="img-box">
+              <img class="img-fluid" src="img/img-gallery/i05.jpg" alt="img">
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="img-box">
+              <img class="img-fluid" src="img/img-gallery/i06.jpg" alt="img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--Img Gallery End-->
+  <!--Brands Start-->
+  <!--search-panel start-->
+  <div class="search-content">
+    <div class="search-inner">
+      <div class="search-header">
+        <h4 class="heading">Search Products</h4>
+        <div class="close-search-icon">
+          <i class="fas fa-close"></i>
+        </div>
+      </div>
+      <div class="search-body">
+        <div class="all-categories">
+          <select class="products form-control">
+            <option value="0" selected="selected text-white">All Categories</option>
+            <option class="level-0" value="kids">Kids</option>
+            <option class="level-1" value="coat-kid">&nbsp;&nbsp;&nbsp;Coat</option>
+            <option class="level-1" value="hoodie">&nbsp;&nbsp;&nbsp;Hoodie</option>
+            <option class="level-1" value="knits">&nbsp;&nbsp;&nbsp;Knits</option>
+            <option class="level-1" value="outerwear">&nbsp;&nbsp;&nbsp;Outerwear</option>
+            <option class="level-1" value="shoes-kid">&nbsp;&nbsp;&nbsp;Shoes</option>
+            <option class="level-0" value="mens">Mens</option>
+            <option class="level-1" value="accessories-mens">&nbsp;&nbsp;&nbsp;Accessories</option>
+            <option class="level-1" value="glasses">&nbsp;&nbsp;&nbsp;Glasses</option>
+            <option class="level-1" value="hats">&nbsp;&nbsp;&nbsp;Hats</option>
+            <option class="level-1" value="polo-shirts">&nbsp;&nbsp;&nbsp;Polo Shirts</option>
+            <option class="level-1" value="slippers">&nbsp;&nbsp;&nbsp;Slippers</option>
+            <option class="level-0" value="womens">Womens</option>
+            <option class="level-1" value="bag">&nbsp;&nbsp;&nbsp;Bag</option>
+            <option class="level-1" value="boots">&nbsp;&nbsp;&nbsp;Boots</option>
+            <option class="level-1" value="dresses">&nbsp;&nbsp;&nbsp;Dresses</option>
+            <option class="level-1" value="jeans">&nbsp;&nbsp;&nbsp;Jeans</option>
+            <option class="level-1" value="t-shirts">&nbsp;&nbsp;&nbsp;T-Shirts</option>
+            <option class="level-1" value="tops">&nbsp;&nbsp;&nbsp;Tops</option>
+          </select>
+          <div class="search-form">
+            <input type="text" class="form-control " placeholder="Search For Items">
+            <a href="#" class="search-button"><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--search-panel end-->
+  <!--Account-panel start-->
+  <div class="account-content">
+    <div class="account-inner">
+      <div class="account-header">
+        <h4 class="heading">Sign In</h4>
+        <div class="close-account-icon">
+          <i class="fas fa-close"></i>
+        </div>
+      </div>
+      <div class="account-body">
+        <form class="form">
+          <input type="text" placeholder="Username" class="form-control">
+          <input type="password" placeholder="Password" class="pas form-control">
+          <span class="show-password-input display-password"><i class="fas fa-eye"></i></span>
+
+          <button class="signIn form-btn form-control mt-5">Sign in</button>
+          <button class="account form-btn form-control mt-3">сreate an account</button>
+          <a href="#" class="login-g  form-btn-2 form-control"><i class="fab fa-google"></i><span>continue
+              with google</span></button>
+            <a href="#" class="login-f form-btn-2 form-control"><i class="fab fa-facebook-f"></i><span>continue with
+                facebook</span></a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--Account-panel end-->
+  <!--Footer Start-->
+  <footer class="footer">
+    <div class="container-fluid px-5">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title">
+            <h4 class="title">Want style Ideas and Treats?</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 ">
+          <div class="form-group"><input type="text" placeholder="Enter Email *">
+            <button class="btn btn-subscribe">subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-links row">
+        <div class="col-lg-3 col-sm-5">
+          <div class="logo">Razzi.</div>
+          <div class="footer-social-link d-flex">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+
+          </div>
+        </div>
+        <div class="col-lg-9 col-sm-7">
+          <div class="row">
+
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <nav>
+                  <h5 class="title">Support</h5>
+                  <ul class="nav-list">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#"> FAQs</a></li>
+                    <li><a href="#"> Size Guide</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="col-lg-3  col-sm-6">
+                <nav>
+                  <h5 class="title">CONTACT
+                  </h5>
+                  <ul class="nav-list">
+                    <li><a href="#"> 1-888-923-8044</a></li>
+                    <li><a href="#"> 1-888-923-8055</a></li>
+                    <li><a href="#"> help@allbirds.com</a></li>
+
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <nav>
+                  <h5 class="title">COMPANY
+                  </h5>
+                  <ul class="nav-list">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#"> Terms & Conditions</a></li>
+                    <li><a href="#"> Careers</a></li>
+                    <li><a href="#"> Privacy & Cookie policy</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <nav>
+                  <h5 class="title">SHOP
+                  </h5>
+                  <ul class="nav-list">
+                    <li><a href="#"> Men’s Shopping</a></li>
+                    <li><a href="#"> Women’s Shopping</a></li>
+                    <li><a href="#"> Kids’ Shopping</a></li>
+                    <li><a href="#"> Discounts</a></li>
+                  </ul>
+                </nav>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <a href="#"><img src="img/footer/icons_payment (1).png" alt=""></a>
+        </div>
+      </div>
+  </footer>
+  <!--Footer End-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

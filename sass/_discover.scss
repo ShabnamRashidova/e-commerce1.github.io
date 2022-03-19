@@ -1,0 +1,88 @@
+#discover {
+  position: relative;
+  .discover-title {
+    margin: 20px 0 60px;
+    @include center;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    &:hover::after {
+      opacity: 0;
+    }
+    &::after {
+      transition: all 0.3s ease;
+      content: "";
+      position: absolute;
+      background-color: #000;
+      height: 1px;
+      bottom: -4px;
+      width: 100px;
+    }
+  }
+  .discover-item {
+    height: 75vh;
+    .text-content {
+      color: #000;
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      .title {
+        font-size: 35px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+      }
+      .link {
+        background-color: #1d1d1d;
+        margin-top: 20px;
+        display: block;
+        height: 55px;
+        width: 190px;
+        font-size: 18px;
+        @include center;
+
+        &:hover {
+          color: #fff;
+          i {
+            transform: translateX(30%);
+          }
+        }
+        i {
+          transition: $general-transition;
+          padding-left: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+    .discover-bg1 {
+      background-image: url("/img/discover/home1-deal-carousel-b1.jpg");
+      background-size: cover;
+      min-height: 100%;
+      width: 100%;
+    }
+    .discover-bg2 {
+      background-image: url("/img/discover/home_2_slider_2.jpg");
+      background-size: cover;
+      min-height: 100%;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  #discover {
+    .discover-item {
+      .text-content {
+        text-align: center;
+        @include center-column;
+        transform: translate(-40%, -10%);
+        .title {
+          font-size: 25px;
+        }
+      }
+      .discover-bg1,
+      .discover-bg2 {
+        background-position: center bottom;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  .dd-button {
+    display: inline-block; 
+    padding: 10px 30px 10px 20px;
+    cursor: pointer;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      width: 0; 
+      height: 0; 
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid black;
+    }
+  }
+  .dd-input {
+    display: none;
+    &:hover + .dd-menu {
+      display: block;
+    } 
+  }
+  .dd-menu {
+    position: absolute;
+    top: 100%;
+    border-radius: 4px;
+    padding: 0;
+    z-index: 100;
+    margin: 2px 0 0 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #ffffff;
+    list-style-type: none;
+    li {
+      padding: 10px 20px;
+      cursor: pointer;
+      white-space: nowrap;
+      border-bottom: 1px solid #eee;
+      &:hover {
+        background-color: #f6f6f6;
+      }
+    }
+  }
+  .dd-input + .dd-menu {
+    display: none;
+  } 
+}
+.topbar{
+    background-color: #F5F5F5;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    .text{
+      span{
+        font-size: 12.5px;
+        font-weight: 500;
+        i{
+          margin-right: 4px;
+          color:#111;
+        }
+      }
+    }
+  .menu{
+    display: flex;
+     margin: 0;
+    padding: 0;
+    li{
+      margin-right: 20px;
+     a{
+      font-weight: 500;
+      color: #333;
+      transition: $general-transition;
+      &:hover{
+        color: #eb6659;
+      }
+     }
+    }
+  }
+  .social-media-btn {
+    display: flex;
+    align-items: center;
+  
+    margin: 0 0 0 30px ;
+    padding: 0;
+    li{
+      margin-right: 14px;
+      a{
+        color: #aaa;
+        font-size: 14px;
+        transition: $general-transition;
+        &:hover{
+          color:#000;
+        }
+      }
+    }
+  }
+  }
+  .topbar-mobile{
+      display: none;
+      background-color: #F5F5F5;
+  }
+  @media(max-width:998px){
+    .topbar-mobile{
+        display: block;
+    }
+    .topbar{
+        display: none;
+    }
+  
+  }

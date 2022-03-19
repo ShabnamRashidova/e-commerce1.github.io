@@ -1,0 +1,43 @@
+#testimonial {
+  padding: 50px 0 50px;
+  .testimonial-item {
+    border: 1px solid #e2e2e2;
+    overflow: hidden;
+    padding: 25px;
+    .testimonial-header {
+      display: flex;
+      .header-img {
+        margin-right: 20px;
+        img {
+          width: 70px;
+        }
+      }
+      .header-content {
+        .test-sub-title {
+          font-size: 15px;
+        }
+        .test-title {
+          font-size: 16px;
+          font-weight: 500;
+          color: #000;
+          margin: 10px 0;
+        }
+        .testi-rate {
+          font-size: 12px;
+          color: #fbd2a3;
+          i {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+    .testimonial-footer {
+      margin-top: 10px;
+      .testi-meta {
+        font-size: 14px;
+        opacity: 0.8;
+        margin-top: 10px;
+      }
+    }
+  }
+}

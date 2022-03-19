@@ -1,0 +1,121 @@
+.footer {
+ background-color: #1F1F1F;
+  padding: 60px 0 60px;
+  .section-title {
+    .title {
+      color: #fff;
+      font-size: 26px;
+    }
+  }
+  .form-group {
+    @include center;
+    input {
+      width: 450px;
+      height: 55px;
+      padding-left: 20px;
+      border: none;
+      border-radius: 0;
+      color: #ccc;
+      background-color: #303030;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .btn-subscribe {
+      width: 130px;
+      height: 55px;
+      background-color: #4f4f4f;
+      border-radius: 0;
+      margin-left: 4px;
+      text-transform: capitalize;
+      color: #fff;
+      font-weight: 600;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .footer-links {
+    margin-top: 60px;
+    @include between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #4f4f4f;
+    .logo {
+      font-size: 30px;
+      color: #eee;
+      font-weight: bolder;
+    }
+    .footer-social-link {
+      a {
+        display: inline-block;
+        margin-right: 10px;
+        color: #aaa;
+        font-size: 20px;
+        transition: $general-transition;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    .title {
+      color: #eee;
+      font-size: 18px;
+    }
+    .nav-list {
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          color: #aaa;
+          font-size: 15px;
+          display: block;
+          line-height: 30px;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            width: 80%;
+            transform: scale(0);
+            background: #ddd;
+            transition: $general-transition;
+          }
+          &:hover::after {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 998px) {
+    .nav-list {
+      margin-bottom: 30px !important;
+    }
+    .logo {
+      margin-top: 15px !important;
+    }
+  }
+  @media (max-width: 576px) {
+    .section-title {
+      .title {
+        font-size: 22px !important;
+      }
+    }
+    .form-group {
+      flex-direction: column;
+      justify-content: center;
+      input {
+        width: 250px !important;
+        background-color: #333 !important;
+      }
+      button {
+        width: 100px !important; 
+        font-size: 13px !important;
+        margin-top: 20px !important;
+      }
+    }
+  }
+}
